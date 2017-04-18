@@ -5,7 +5,7 @@ This is a simple two step checkout application that calculates the apples and or
 Step 1 - Simple product pricing for apples and Oranges
 Step 2 - Multi-buy offers for apples and oranges
 
-HTTP URL for the applcaiton : ( example) http://localhost:9000/price/orange,apple,apple
+HTTP URL for the application :- http://localhost:9000/checkout/orange,apple,apple,apple,orange,orange
 
 ## Running
 
