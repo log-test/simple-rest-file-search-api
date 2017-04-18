@@ -30,6 +30,18 @@ class ApplicationSpec extends PlaySpec with OneAppPerTest {
     "checkout must price for orange" in {
       route(app, FakeRequest(GET, "/checkout/orange")).map(contentAsString(_)) mustBe Some("0.25")
     }
+    
+    "checkout must price for multi apple" in {
+      route(app, FakeRequest(GET, "/checkout/apple,apple,apple")).map(contentAsString(_)) mustBe Some("1.80")
+    }
+    
+    "checkout must price for multi oranges" in {
+      route(app, FakeRequest(GET, "/checkout/orange,orange")).map(contentAsString(_)) mustBe Some("0.50")
+    }
+    
+    "checkout must price for multi apple and onrages" in {
+      route(app, FakeRequest(GET, "/checkout/orange,orange,apple,apple")).map(contentAsString(_)) mustBe Some("1.70")
+    }
 
   }
 }
