@@ -9,9 +9,12 @@ import services.ProductPrice._
 class Checkout @Inject() extends Controller {
 
   def cartValue(items: String) = Action {
-        
-    Ok("")
     
+    val itemsList = items.toLowerCase.split(",").toList   
+    
+    Ok(checkoutTotalPrice(items).formatted("%.2f"))
+    
+
   }
 
 }
