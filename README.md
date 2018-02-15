@@ -1,4 +1,4 @@
-# HMRC Simple Checkout Cart applicaiton
+# Simple Checkout Cart applicaiton
 
 This is a simple two step checkout application that calculates the apples and oranges price
 
