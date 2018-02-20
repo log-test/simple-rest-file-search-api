@@ -15,10 +15,10 @@ This is a simple RESTful services for searching File.
 2) Create an application.properties file in the config folder with your Lucene index location and port number. Refer to [application.properties](config/application.properties)
 
 
+
 ###Example 
 	#Path to Lucene index directory
-	lucene.index.location=D:\\files\\
-	
+	lucene.index.location=D:\\files\\  
 	And copy the example files Test1.txt and Test2.txt to the above filder for testing. In production it will be the real files.
 	 
 
